@@ -1,17 +1,18 @@
 name: sync2gitee
-on: 
-      push:
-            branches:    
-            - '**'        # matches every branch
-      pull_request:
-             branches:    
-            - '**'        # matches every branch
-      create:
-             branches:    
-            - '**'        # matches every branch
-      delete:
-             branches:    
-            - '**'        # matches every branch
+
+on:
+  push:
+    branches:
+      - '**'
+  pull_request:
+    branches:
+      - '**'
+  create:
+    branches:
+      - '**'
+  delete:
+    branches:    
+      - '**' 
 jobs:
   repo-sync:
     env:
